@@ -8,19 +8,30 @@
 // console.log(apiKey);
 
 //importing multiple vars
-import { var1, var2, var3 } from './util.js';
+// import { var1, var2, var3 } from './util.js';
 
 //importing multiple vars as a JS group (object)
-import * as util from './util.js';
+// import * as util from './util.js';
 
 // to assign alias
 // import { var1, var2 as renaming} from './util.js'; 
 
+// console.log(var1);
+// console.log(var2);
+// console.log(var3);
+// console.log(util);
+// console.log(util.var1);
+// console.log(renaming);
 
+// Variables and Values can be created when needed
+console.log("Hello World!!!");
 
-console.log(var1);
-console.log(var2);
-console.log(var3);
-console.log(util);
-console.log(util.var1);
-console.log(renaming);
+let userMessage = "Why ?? my value can be re-assigned";
+var x = "my value is x";
+const y = "i cannot be re-assigned";
+
+console.log(userMessage);
+console.log(x);
+console.log(y);
+
+// Operators

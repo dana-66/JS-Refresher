@@ -34,21 +34,41 @@
 // console.log(x);
 // console.log(y);
 
-// Operators
-console.log(6 + 2);
-console.log("text 1 " + " ,Text 2"); //string concatenation
-console.log(6 - 2);
-console.log(6 / 2);
-console.log(6 * 2);
-console.log(6 % 2);
-console.log(6 ^ 2);
+// // Operators
+// console.log(6 + 2);
+// console.log("text 1 " + " ,Text 2"); //string concatenation
+// console.log(6 - 2);
+// console.log(6 / 2);
+// console.log(6 * 2);
+// console.log(6 % 2);
+// console.log(6 ^ 2);
 
-// comparison operators
-console.log(6 === 2); //strictly equal
-console.log(6 > 2);
-console.log(6 < 2);
-console.log(6 >= 2);
-console.log(6 <= 2);
-console.log(6 !== 2);
+// // comparison operators
+// console.log(6 === 2); //strictly equal
+// console.log(6 > 2);
+// console.log(6 < 2);
+// console.log(6 >= 2);
+// console.log(6 <= 2);
+// console.log(6 !== 2);
+
+// Functions & Parameters
+// declaring the function using function keyword
+function greet(name) {
+     console.log("Hello,",name)
+}
+// invoking the function
+greet("Dan");
+
+// you can assign a default value to a parameter like this
+function greetings(userName, msg = "Hello!!!") {
+    // console.log(userName);
+    // console.log(msg);
+    return "Hi, iam " +userName +". " +msg;
+}
+greetings("Dan");
+
+const maxGreetings = greetings("Sam", "how u doin ?");
+console.log(maxGreetings);
 
 
+// Arrow Functions

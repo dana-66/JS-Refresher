@@ -51,24 +51,33 @@
 // console.log(6 <= 2);
 // console.log(6 !== 2);
 
-// Functions & Parameters
-// declaring the function using function keyword
-function greet(name) {
-     console.log("Hello,",name)
-}
-// invoking the function
-greet("Dan");
+// // Functions & Parameters
+// // declaring the function using function keyword
+// function greet(name) {
+//      console.log("Hello,",name)
+// }
+// // invoking the function
+// greet("Dan");
 
-// you can assign a default value to a parameter like this
-function greetings(userName, msg = "Hello!!!") {
-    // console.log(userName);
-    // console.log(msg);
-    return "Hi, iam " +userName +". " +msg;
-}
-greetings("Dan");
+// // you can assign a default value to a parameter like this
+// function greetings(userName, msg = "Hello!!!") {
+//     // console.log(userName);
+//     // console.log(msg);
+//     return "Hi, iam " +userName +". " +msg;
+// }
+// greetings("Dan");
 
-const maxGreetings = greetings("Sam", "how u doin ?");
-console.log(maxGreetings);
+// const maxGreetings = greetings("Sam", "how u doin ?");
+// console.log(maxGreetings);
 
 
-// Arrow Functions
+// Arrow Functions:
+    // - using the function keyword
+    export default function () {
+        console.log("Hello !");
+    };
+    // arrow syntax
+    const sum = (num1, num2) => {
+        return num1 +" + " +num2 +" = " +(num1+num2);
+    }
+    console.log(sum(3,2));

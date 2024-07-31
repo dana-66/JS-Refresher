@@ -81,3 +81,11 @@
         return num1 +" + " +num2 +" = " +(num1+num2);
     }
     console.log(sum(3,2));
+
+    // Objects & Classes
+    // okay lets go
+    // arrow syntax
+    const summ = (num1, num2) => {
+        return num1 +" + " +num2 +" = " +(num1+num2);
+    }
+    console.log(summ(3,2));

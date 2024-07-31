@@ -89,3 +89,7 @@
         return num1 +" + " +num2 +" = " +(num1+num2);
     }
     console.log(summ(3,2));
+    const Mult = (num1, num2) => {
+        return num1 +" * " +num2 +" = " +(num1*num2);
+    }
+    console.log(mult(3,2));

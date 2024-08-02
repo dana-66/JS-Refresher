@@ -131,4 +131,22 @@
     // console.log(user1);
     // user1.greet();
 
-    
+    // Arrays & Array methods:
+    const hobbies = ["playing chess", "reading", "drawing"];
+    console.log(hobbies);
+    console.log(hobbies[0]);    //playing chess
+    console.log(hobbies[1]);    //reading
+    console.log(hobbies[2]);    //drawing
+
+    // array Methods
+    hobbies.push("music");
+    const index = hobbies.findIndex((item) => item === "sports");
+    console.log(index);
+    console.log(hobbies);
+
+    const arr2 = hobbies.map((item) => item + "!");
+    console.log(arr2);
+
+    //transform the type from string into object
+    const objectArr = hobbies.map((item) => ({text: item}));
+    console.log(objectArr);

@@ -73,23 +73,62 @@
 
 // Arrow Functions:
     // - using the function keyword
-    export default function () {
-        console.log("Hello !");
-    };
-    // arrow syntax
-    const sum = (num1, num2) => {
-        return num1 +" + " +num2 +" = " +(num1+num2);
-    }
-    console.log(sum(3,2));
+    // export default function () {
+    //     console.log("Hello !");
+    // };
+    // // arrow syntax
+    // const sum = (num1, num2) => {
+    //     return num1 +" + " +num2 +" = " +(num1+num2);
+    // }
+    // console.log(sum(3,2));
 
-    // Objects & Classes
-    // okay lets go
-    // arrow syntax
-    const summ = (num1, num2) => {
-        return num1 +" + " +num2 +" = " +(num1+num2);
-    }
-    console.log(summ(3,2));
-    const Mult = (num1, num2) => {
-        return num1 +" * " +num2 +" = " +(num1*num2);
-    }
-    console.log(mult(3,2));
+    // // okay lets go
+    // // arrow syntax
+    // const summ = (num1, num2) => {
+    //     return num1 +" + " +num2 +" = " +(num1+num2);
+    // }
+    // console.log(summ(3,2));
+    // const mult = (num1, num2) => {
+    //     return num1 +" * " +num2 +" = " +(num1*num2);
+    // }
+    // console.log(mult(3,2));
+
+
+    // Objects & Classes: 
+    // objects : can be used to group multiple values together
+    // const user = {
+    //     name: "Dan",
+    //     age: 22,
+    //     greet() {
+    //         console.log("Hello!");
+    //         console.log(this.age);
+    //     }
+    // };
+
+    // console.log(user);
+    // // to access a value in an objects
+    // console.log(user.name);
+    // console.log(user.age);
+    // // console.log(user.greet());
+    // user.greet();
+
+    // // creating a blueprint for an object
+    // class User {
+    //     // constructor
+    //     constructor(name, age) {
+    //         // creating properties
+    //         this.name = name;
+    //         this.age = age;
+    //     }   
+
+    //     greet() {
+    //         console.log("Hi," ,this.name);
+    //     }
+    // };
+
+    // // using the class
+    // const user1 = new User("Dan", 23);
+    // console.log(user1);
+    // user1.greet();
+
+    

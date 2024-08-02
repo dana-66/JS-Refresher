@@ -132,21 +132,44 @@
     // user1.greet();
 
     // Arrays & Array methods:
-    const hobbies = ["playing chess", "reading", "drawing"];
-    console.log(hobbies);
-    console.log(hobbies[0]);    //playing chess
-    console.log(hobbies[1]);    //reading
-    console.log(hobbies[2]);    //drawing
+    // const hobbies = ["playing chess", "reading", "drawing"];
+    // console.log(hobbies);
+    // console.log(hobbies[0]);    //playing chess
+    // console.log(hobbies[1]);    //reading
+    // console.log(hobbies[2]);    //drawing
 
-    // array Methods
-    hobbies.push("music");
-    const index = hobbies.findIndex((item) => item === "sports");
-    console.log(index);
-    console.log(hobbies);
+    // // array Methods
+    // hobbies.push("music");
+    // const index = hobbies.findIndex((item) => item === "sports");
+    // console.log(index);
+    // console.log(hobbies);
 
-    const arr2 = hobbies.map((item) => item + "!");
-    console.log(arr2);
+    // const arr2 = hobbies.map((item) => item + "!");
+    // console.log(arr2);
 
-    //transform the type from string into object
-    const objectArr = hobbies.map((item) => ({text: item}));
-    console.log(objectArr);
+    // //transform the type from string into object
+    // const objectArr = hobbies.map((item) => ({text: item}));
+    // console.log(objectArr);
+
+    // Destructuring 
+    // const userNameData = ["Dan", "Vashappening"];
+
+    // const firstName = userNameData[0];
+    // const lastName = userNameData[1];
+
+    const [firstName, lastName] = ["Dan", "Vashappening"];
+    console.log(firstName);
+    console.log(lastName);
+
+    // can also be used with objects
+    const user = {
+        name: "Dan",
+        age: 22
+    };
+    // const name = user.name;
+    // const age = user.age;
+    
+    //with destructuring 
+    const {name, age} = user;
+    const {name: userName, age: userAge} = user;
+    console.log(userName);

@@ -157,19 +157,41 @@
     // const firstName = userNameData[0];
     // const lastName = userNameData[1];
 
-    const [firstName, lastName] = ["Dan", "Vashappening"];
-    console.log(firstName);
-    console.log(lastName);
+    // const [firstName, lastName] = ["Dan", "Vashappening"];
+    // console.log(firstName);
+    // console.log(lastName);
 
-    // can also be used with objects
-    const user = {
-        name: "Dan",
-        age: 22
-    };
-    // const name = user.name;
-    // const age = user.age;
+    // // can also be used with objects
+    // const user = {
+    //     name: "Dan",
+    //     age: 22
+    // };
+    // // const name = user.name;
+    // // const age = user.age;
     
-    //with destructuring 
-    const {name, age} = user;
-    const {name: userName, age: userAge} = user;
-    console.log(userName);
+    // //with destructuring 
+    // const {name, age} = user;
+    // const {name: userName, age: userAge} = user;
+    // console.log(userName);
+
+    // Spread Operator
+    const alp = ["a", "b", "c", "d"];
+    const newAlp = ["h"];
+
+    // const mergedAlp = [alp, newAlp];
+    // console.log(mergedAlp); //[Array(4), Array(1)] will result in a nested array situation
+
+    const mergedAlp = [...alp, ...newAlp];
+    console.log(mergedAlp);     //['a', 'b', 'c', 'd', 'h']
+
+    //using the spread operator with objects
+    const car = {
+        name: "Mercedes",
+        type: "Mercedes-AMG GT",
+        modelYear: 2023
+    };
+    const extendedCar = {
+        isAvailable: true,
+        ...car
+    }
+    console.log(extendedCar);

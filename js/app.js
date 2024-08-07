@@ -193,23 +193,42 @@
 // }
 // console.log(extendedCar);
 
-// Control Structures
-const password = prompt("Your Password: ");
-if(password === "Hello"){
-    console.log("Hello works.")
-}else if(password === "hello"){
-    console.log("hello works.")
-}else{
-    console.log("Access not granted")
+// // Control Structures
+// const password = prompt("Your Password: ");
+// if(password === "Hello"){
+//     console.log("Hello works.")
+// }else if(password === "hello"){
+//     console.log("hello works.")
+// }else{
+//     console.log("Access not granted")
+// };
+
+// // for loop
+// const food = ["ramen", "burger", "sushi", "BBQ"];
+
+// for(let i = 0; i < food.length;i++) {
+//     console.log(food[i]);
+// }
+
+// for(const item of food){
+//     console.log(item);
+// }
+
+// Using Functions as Values:
+setTimeout(() => {
+    // here we are defining the function not executing it
+  console.log("Timed out!");
+}, 2000);
+
+const handleTimeoutAgain = () => {
+    console.log("Timed out....again!");
+}
+
+setTimeout(handleTimeoutAgain, 3000);
+
+// function as a parameter
+function greeter(greetFn) {
+    greetFn();
 };
 
-// for loop
-const food = ["ramen", "burger", "sushi", "BBQ"];
-
-for(let i = 0; i < food.length;i++) {
-    console.log(food[i]);
-}
-
-for(const item of food){
-    console.log(item);
-}
+greeter(()=>console.log("Hi"));

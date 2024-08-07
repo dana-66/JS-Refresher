@@ -214,9 +214,9 @@
 //     console.log(item);
 // }
 
-// Manipulating the DOM (not with React tho :' )
-const list = document.querySelector("ul");
-list.remove();
+// // Manipulating the DOM (not with React tho :' )
+// const list = document.querySelector("ul");
+// list.remove();
 
 // Using Functions as Values:
 // setTimeout(() => {
@@ -237,3 +237,15 @@ list.remove();
 
 // greeter(()=>console.log("Hi"));
 
+// Defining functions inside of functions
+function init() {
+  function greet() {
+    console.log("Hello, samanطa !!!");
+  }
+  // can be executed here
+  greet();
+}
+
+init();
+// ReferenceError: greet is not defined
+greet();

@@ -238,14 +238,25 @@
 // greeter(()=>console.log("Hi"));
 
 // Defining functions inside of functions
-function init() {
-  function greet() {
-    console.log("Hello, samanطa !!!");
-  }
-  // can be executed here
-  greet();
-}
+// function init() {
+//   function greet() {
+//     console.log("Hello, samanطa !!!");
+//   }
+//   // can be executed here
+//   greet();
+// }
 
-init();
-// ReferenceError: greet is not defined
-greet();
+// init();
+// // ReferenceError: greet is not defined
+// greet();
+
+// Reference VS primitive values
+let userMsg = 'Hello'; //a primitive value (cannot be edited)
+    userMsg = 'Hello';  // this is a new string the old string will be thrown away (its not edited!).even if i execute a method
+    userMsg.concat(' !!!');
+
+    // objects and arrays are not primitive (Reference Value = which in the memory u don't store the value (like in primitive values) instead u store a reference or an address to the value).
+    const hobbies2 = ["sports", "cooking"];
+    hobbies2.push("reading");  //i add it to the original array. (it mutated the original array). here the value changed but the address stays the same
+    console.log(hobbies2);   
+    // NOTE !!! const means that the value CANNOT be overwritten. (the address cannot be changed).

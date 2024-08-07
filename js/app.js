@@ -214,21 +214,26 @@
 //     console.log(item);
 // }
 
+// Manipulating the DOM (not with React tho :' )
+const list = document.querySelector("ul");
+list.remove();
+
 // Using Functions as Values:
-setTimeout(() => {
-    // here we are defining the function not executing it
-  console.log("Timed out!");
-}, 2000);
+// setTimeout(() => {
+//     // here we are defining the function not executing it
+//   console.log("Timed out!");
+// }, 2000);
 
-const handleTimeoutAgain = () => {
-    console.log("Timed out....again!");
-}
+// const handleTimeoutAgain = () => {
+//     console.log("Timed out....again!");
+// }
 
-setTimeout(handleTimeoutAgain, 3000);
+// setTimeout(handleTimeoutAgain, 3000);
 
-// function as a parameter
-function greeter(greetFn) {
-    greetFn();
-};
+// // function as a parameter
+// function greeter(greetFn) {
+//     greetFn();
+// };
 
-greeter(()=>console.log("Hi"));
+// greeter(()=>console.log("Hi"));
+
